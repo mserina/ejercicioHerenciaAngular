@@ -1,0 +1,8 @@
+#lista{
+    width: 25%;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    border-radius: 1rem;
+    padding: 10 rem;
+    box-shadow: inset;
+}

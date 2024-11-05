@@ -1,0 +1,6 @@
+<div id="lista">
+    <h3>Lista de cosas</h3>
+    <ul>
+        <li *ngFor="let item of cosas" (click)="onSelect(item)">{{item}}</li>
+    </ul>
+</div>
