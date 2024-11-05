@@ -12,9 +12,9 @@ import { DetailComponent } from "./detail/detail.component";
 })
 export class AppComponent {
   title = 'familia';
-  itemSelected : string = '';
+  itemSelected : object = {};
 
-  changeItem(item:string){
+  changeItem(item:object){
     this.itemSelected = item;
     console.log(item);
   }

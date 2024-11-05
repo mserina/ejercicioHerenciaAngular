@@ -1,3 +1,14 @@
 <h2>{{title}}</h2>
+
 <app-lista (itemSelected)="changeItem($event)"></app-lista>
-<app-detail></app-detail>
+
+<!-- 
+ [item]= "itemSelected": 
+    * Esto es un enlace de propiedad 
+    * Le pasamos el evento 'itemSelected' de lista a la propiedad 'item' de detail 
+
+    Para aclarar:
+       * [item]: propiedad
+       * (itemSelected): evento
+ -->
+<app-detail [item]="itemSelected"></app-detail>

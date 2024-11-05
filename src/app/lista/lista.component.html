@@ -1,6 +1,8 @@
 <div id="lista">
     <h3>Lista de cosas</h3>
     <ul>
-        <li *ngFor="let item of cosas" (click)="onSelect(item)">{{item}}</li>
+        <!--ngFor: funciona como un forEach-->
+        <!-- (click)="onSelect(item): cuando se haga click en un item este ejecutara el metodo onSelect pasadondole por parametro el valor item (valor que conseguimos en el *ngFor) -->
+        <li *ngFor="let item of cosas" (click)="onSelect(item)">{{item.name}}</li>
     </ul>
 </div>
